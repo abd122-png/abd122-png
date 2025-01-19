@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord des Ventes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Tableau de Bord des Ventes</h1>
+        <form method="POST" action="/ajouter_vente" class="mb-4">
+            <input type="text" name="produit" placeholder="Produit" required>
+            <input type="text" name="categorie" placeholder="Catégorie" required>
+            <input type="number" name="prix" placeholder="Prix" step="0.01" required>
+            <input type="number" name="quantite" placeholder="Quantité" required>
+            <input type="date" name="date_vente" required>
+            <button type="submit" class="btn btn-primary">Ajouter Vente</button>
+        </form>
+        <h2>Ventes</h2>
+        <ul>
+            {% for vente in ventes %}
+                <li>{{ vente.produit }}: {{ vente.quantite }} unités à {{ vente.prix }}€ le {{ vente.date }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="{{ url_for('static', filename='js/chart.js') }}"></script>
+</body>
+</html> -->
